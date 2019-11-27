@@ -1,0 +1,324 @@
+/************************/
+/* BASIC SETUP */
+/***********************/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: whitesmoke;
+  color: #555;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+*:focus{
+  outline: none;
+}
+
+/************************/
+/* REUSABLE COMPONENTS */
+/***********************/
+
+
+/* ---- HEADINGS ---- */
+
+h4 {
+  font-size: 80%;
+  margin-top:15px;
+  margin-bottom: 25px;
+}
+
+
+/* ---- LINKS ---- */
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px;
+  font-size: 85%;
+  text-decoration: none;
+}
+
+.Project li a:link,
+.Project li a:visited {
+  text-decoration: none; 
+  color: rgb(95, 95, 95);
+  list-style: disc;
+  font-size: 55%;
+  padding: 10px;
+}
+
+.Project li:hover,
+.Project li:active {
+  background-color:  rgb(120, 179, 194);;
+}
+
+.Ticket li a:link,
+.Ticket li a:visited {
+  text-decoration: none;
+  list-style:none;
+  font-size: 95%;
+  color: #555;
+  padding: 5px 10px;
+}
+
+.Ticket li a:hover,
+.Ticket li a:active {
+  background-color:  rgb(211, 211, 211);
+  padding: 5px 10px;
+}
+
+
+/* ---- BUTTONS ---- */
+.btn-b:link,
+.btn-b:visited {
+  display: inline-block;
+  background-color: rgb(49, 168, 197);
+  color: whitesmoke;
+  text-decoration: none; 
+  border-radius: 2px;
+}
+
+.btn-b:hover,
+.btn-b:active {
+  background-color: rgb(43, 135, 158);
+}
+
+.btn-w:link,
+.btn-w:visited {
+  display: inline-block;
+  color: #555;;
+  text-decoration: none; 
+}
+
+.btn-w:hover,
+.btn-w:active {
+  color:rgb(43, 135, 158);
+  text-decoration: none; 
+}
+
+.Comments button {
+  float: right;
+  margin-top:17px;
+  padding: 4px;
+  font-size: 45%;
+  border-radius: 2px;
+  margin-right: 5px;
+  background-color: rgb(211, 211, 211);
+}
+
+
+
+
+/****************/
+/* HEADER */
+/****************/
+
+header {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+nav { 
+  float: left;
+  width: 97%;
+  border-bottom: 1px solid rgb(139, 139, 139);
+  margin: 0px;
+  padding-bottom:10px;
+  -webkit-box-shadow: 0 8px 6px -6px rgb(100, 100, 100);
+  -moz-box-shadow: 0 8px 6px -6px rgb(100, 100, 100);
+  box-shadow: 0 8px 6px -6px rgb(100, 100, 100);
+}
+
+nav p {
+  font-size: 45%;
+  margin-left: 5px;
+  padding: 0px;
+  color: rgb(167, 167, 167);
+  width: 30%;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: -50px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 70%;
+}
+
+.grey {
+  
+  margin-top:20px;
+  width: 3%;
+  height: 30px;
+  background-color: rgb(211, 211, 211);
+  float: right;
+  
+}
+
+/**************************************************/
+.ProjectsAndTickets{
+  width: 30%;
+  float: left;
+}
+
+/****************/
+/* PROJECTS */
+/****************/
+
+.Projects {
+  background-color: rgb(186, 210, 216);
+  color: rgb(95, 95, 95);
+  width:50%;
+  height: 100vh;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  float: left;
+}
+
+.Project {
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.Project li {
+  list-style-position:inside;
+  padding: 4px;
+  font-size: 100%;
+  text-overflow: ellipsis; /* will make [...] at the end */
+  max-width: 21ch; 
+  white-space: nowrap; /* paragraph to one line */
+  overflow:hidden;
+} 
+
+
+
+.Project li span {
+  position: relative;
+  left: -15px;
+}
+
+/****************/
+/* TICKETS */
+/****************/
+
+.Tickets {
+  width:50%;
+  float:right;
+  background-color: rgb(235, 235, 235);
+  height: 100vh;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+}
+
+.Ticket {
+  width: 100%;
+  margin-bottom: 7px;
+  text-align: left;
+}
+
+.Ticket li {
+  font-size: 65%;
+  list-style: none;
+  padding: 5px 15px;
+  margin-left: 0px;
+  text-overflow: ellipsis; 
+  max-width: 20ch; 
+  white-space: nowrap; 
+  overflow:hidden; 
+}
+
+/****************/
+/* COMMENTS */
+/****************/
+
+.IssueAndComments {
+  width:70%;
+  display: inline-block;
+
+}
+
+.Description {
+  text-align: left;
+  padding: 8px;
+  margin: 0;
+}
+
+.Description p {
+  font-size: 55%;
+  padding-bottom: 8px;
+  padding-left: 3px;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.InputFile {
+  width: 99%;
+  margin-top: 20px;
+  padding-bottom: 20px;  
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.InputFile p {
+  color:  rgb(202, 202, 202);
+  font-size: 55%;
+  padding-left: 15px;
+}
+
+.InputFile input {
+  margin-left: 15px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.Comments {
+  text-align: left;
+  padding: 8px;
+  margin: 0;
+}
+
+.Comments h4 {
+  width:30%;
+  float: left;
+}
+
+/****************/
+/* FORM */
+/****************/
+
+.Form {
+  border: 3px solid  rgb(167, 167, 167);
+  position: relative;
+  z-index: 99 !important;
+  background-color: rgb(167, 167, 167);
+  width: 50%;
+  margin: 0 auto;
+}
+
+form {
+  padding: 20px;
+}
+
+#selectP,
+#newIssue,
+#btn-submit {
+  font-size: 75%;
+  color: rgb(104, 104, 104);
+  margin: 5px;
+  padding: 2px;
+}
+
+#btn-submit {
+  border-radius: 2px;
+}
